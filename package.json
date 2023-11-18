@@ -1,0 +1,25 @@
+{
+  "name": "minecraft-server-discord-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx --watch ./src/app.ts",
+    "build": "rimraf ./out && esbuild ./src/app.ts --bundle --platform=node --target=node20 --outfile=./out/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.9.1",
+    "esbuild": "^0.19.5",
+    "tsx": "^4.1.3",
+    "typescript": "^5.2.2",
+    "rimraf": "^5.0.5"
+  },
+  "dependencies": {
+    "fastify": "^4.24.3"
+  },
+  "packageManager": "pnpm@8.10.5"
+}
